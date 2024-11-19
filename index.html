@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/script.js"></script>
+
+    
+    <title>Aula17</title>
+
+</head>
+<body>
+    <label for="lTitulo">Exemplo 1 - Evento: onclick</label>
+    <label for="lTitulo1"> Este exemplo exibe uma mensagem simples utilizando o input -button </label> <br>
+
+    <input type="button" value="Clique aqui" onclick="mostraAlerta()">
+    <input type="button" value="Clique aqui1" onclick="mostraAlerta1('Marcos')">
+
+    <!-- Trabalhando com função-->
+    <div>
+        <label for="lTexto">Digite algo:</label>
+        <input type="text" name="nTexto" id="idTexto">
+        <input type="button" value="Clique aqui" 
+        onclick="idResultado.value = mensagem_com_parametro_return(idTexto.value)"
+        > <br>
+
+        <label for="nResultado">Resultado</label>
+        <input type="text" name="nResult" id="idResultado">
+    </div>
+
+    <div>
+        <label for="lNumber1">Digite o 1º número:</label>
+        <input type ="number" name="lNumber" id="idNumero1">
+       
+        <br>
+
+        <label for="lNumber2">Digite o 2º número:</label>
+        <input type ="number" name="lNumber1" id="idNumero2">
+        <br>
+
+        <label for="lResultado">Resultado</label>
+        <input type ="number" name="LResultado" id="idResultadoSoma"> 
+        <input type="button" value="Clique aqui" 
+        onclick="idResultadoSoma.value = calculaSoma(idNumero1.value, idNumero2.value)"
+        > <br>
+
+
+    </div>
+    
+   
+</body>
+</html>
